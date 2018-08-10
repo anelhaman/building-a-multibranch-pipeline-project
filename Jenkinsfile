@@ -2,8 +2,9 @@ pipeline {
     agent {
         docker {
             image 'node:10.8'
-            args '-p 3000:3000 -p 5000:5000' 
             label 'docker'
+            args '-p 3000:3000 -p 5000:5000' 
+            
         }
     }
     environment {
