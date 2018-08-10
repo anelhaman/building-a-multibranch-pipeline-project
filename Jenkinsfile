@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { label'docker-agent' image 'node:10.8' args '-p 3000:3000 -p 5000:5000' }
+        docker { label'docker-agent' }
     }
     environment {
         CI = 'true'
