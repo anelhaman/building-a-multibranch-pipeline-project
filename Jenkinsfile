@@ -2,6 +2,7 @@ pipeline {
     agent {
         docker {
             label 'docker-agent'
+            image 'node:latest'
         }
 }
 
