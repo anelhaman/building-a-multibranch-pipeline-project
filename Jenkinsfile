@@ -1,11 +1,10 @@
 pipeline {
     agent {
         docker {
-            label 'docker-agent'
+            label 'docker'
             image 'node:latest'
         }
 }
-
     environment {
         CI = 'true'
     }
